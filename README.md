@@ -1,3 +1,90 @@
+
+# ProductApp
+
+Une application simple pour gérer les produits et leurs catégories.
+
+## Prérequis
+
+- PHP >= 7.4
+- Composer
+- MySQL (ou une base de données de votre choix)
+- Node.js & npm
+
+## Installation
+
+1. **Clonez le dépôt**:
+   
+   ```
+   git clone https://github.com/votre_nom_d'utilisateur/product-app.git
+   cd product-app
+   ```
+
+2. **Installez les dépendances PHP**:
+   
+   ```
+   composer install
+   ```
+
+3. **Configurez votre environnement**:
+   
+ Dans`.env`  mettez à jour les détails de la base de données et toutes les autres configurations nécessaires.
+
+
+5. **Exécutez les migrations** (et les seeders si vous en avez):
+
+   ```
+   php artisan migrate
+   ```
+
+6. **Installez les dépendances Frontend**:
+
+   ```
+   npm install
+   ```
+
+7. **Compilez les assets**:
+
+   ```
+   npm run dev
+   ```
+
+   Ou pour une version de production:
+
+   ```
+   npm run prod
+   ```
+
+8. **Lancer le serveur de développement (optionnel)**:
+   
+   ```
+   php artisan serve
+   ```
+
+   Vous pouvez maintenant accéder à l'application via `http://localhost:8000`.
+
+## API Endpoints
+
+- Produits:
+  - GET, POST: `/api/products`
+  - GET, PUT, DELETE: `/api/products/{id}`
+  
+- Catégories:
+  - GET, POST: `/api/categories`
+  - GET, PUT, DELETE: `/api/categories/{id}`
+
+## Tests
+
+Pour exécuter les tests, utilisez la commande suivante:
+
+```
+php artisan test
+```
+
+
+---
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
